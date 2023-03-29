@@ -62,6 +62,20 @@ body {
 .mb-hg {
   margin-bottom: 5rem; }
 
+.cta {
+  margin-top: 3rem;
+  grid-column: 1 / span 2;
+  border: none;
+  background-color: #c69963;
+  color: white;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  transition: all 0.3s; }
+  .cta:hover {
+    background-color: #b28451; }
+
 .sidebar {
   background-color: #c69963;
   grid-column: sidebar-start / sidebar-end;
@@ -103,7 +117,8 @@ body {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  align-items: center; }
+  align-items: center;
+  background-image: linear-gradient(rgba(198, 153, 99, 0.4), rgba(198, 153, 99, 0.5)), url(/img/back.jpg); }
 
 .story__img--1 {
   grid-column: 2/ 6;
@@ -130,8 +145,52 @@ body {
   font-style: italic; }
 
 .homes {
-  background-color: #101d2c;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  margin: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem; }
+  .homes .home {
+    background-color: #f9f7f6;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, min-content); }
+    .homes .home__img {
+      width: 100%;
+      grid-column: 1 / span 2; }
+    .homes .home__like {
+      position: absolute;
+      padding: 1rem;
+      top: 0rem;
+      right: 0rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      fill: #c69963; }
+    .homes .home__name {
+      grid-column: 1 / span 2;
+      text-align: center;
+      padding: 1rem 2.5rem;
+      background-color: #101d2c;
+      color: white;
+      width: 60%;
+      transform: translateY(-2rem);
+      justify-self: center;
+      font-size: 1.5rem; }
+    .homes .home__location, .homes .home__rooms, .homes .home__area, .homes .home__price {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 3rem;
+      margin-top: 3rem; }
+      .homes .home__location svg, .homes .home__rooms svg, .homes .home__area svg, .homes .home__price svg {
+        fill: #c69963;
+        height: 2rem;
+        width: 2rem; }
+      .homes .home__location p, .homes .home__rooms p, .homes .home__area p, .homes .home__price p {
+        margin-left: 2rem;
+        font-size: 1.3rem;
+        text-transform: uppercase; }
 
 .gallery {
   background-color: #c69963;

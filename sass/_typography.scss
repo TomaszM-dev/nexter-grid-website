@@ -57,3 +57,21 @@
 .mb-hg {
   margin-bottom: 5rem;
 }
+
+.cta {
+  margin-top: 3rem;
+  grid-column: 1 / span 2;
+
+  border: none;
+  background-color: $color-primary;
+  color: white;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  font-family: $font-display;
+  text-transform: uppercase;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
