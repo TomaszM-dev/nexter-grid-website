@@ -5,7 +5,7 @@
 
 .heading-h4 {
   @extend %heading;
-  font-size: 1.9rem;
+  font-size: 3.9rem;
 
   &__light {
     color: $color-grey-light-1;
@@ -26,6 +26,9 @@
 }
 .heading-h1 {
   @extend %heading;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: $color-primary;
 }
 
 .btn {
@@ -49,13 +52,13 @@
   margin-bottom: 2rem;
 }
 .mb-md {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 .mb-lg {
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
 }
 .mb-hg {
-  margin-bottom: 5rem;
+  margin-bottom: 13rem;
 }
 
 .cta {

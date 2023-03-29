@@ -1,4 +1,4 @@
-// COLOR VARIABLES
+@import "mixins"; // COLOR VARIABLES
 $color-primary: #c69963;
 $color-primary-dark: #b28451;
 
@@ -23,6 +23,16 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   overflow-x: hidden;
+
+  @include respond(tab-land) {
+    font-size: 50%;
+  }
+  @include respond(tab-port) {
+    font-size: 45%;
+  }
+  @include respond(phone) {
+    font-size: 40%;
+  }
 }
 
 body {

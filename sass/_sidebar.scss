@@ -2,4 +2,37 @@
   background-color: $color-primary;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
+  position: relative;
+
+  @include respond(tab-port) {
+    display: flex;
+  }
+
+  &__hamburger {
+    position: absolute;
+    top: 3rem;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    background-color: white;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1.1rem;
+      left: 0%;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2.2rem;
+      left: 0%;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+    }
+  }
 }
